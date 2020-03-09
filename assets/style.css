@@ -134,14 +134,14 @@ nav {
     top: 55px;
 }
 
-.card-container{
+.card-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 500px;
+    height: 600px;
 }
 
-.card{
+.card {
     height: 330px;
     width: 260px;
     background-color: #F6F5F3;
@@ -154,11 +154,22 @@ nav {
     text-align: center;
 }
 
-.card p{
+.card p {
     font-family: "Quicksand", sans-serif;
 }
 
-.grin{
+.card img {
+    width: 150px;
+    position: relative;
+    top: -80px;
+
+}
+
+.big-img{
+    width: 125px !important;
+}
+
+.grin {
     background-color: #1B510A;
     color: #fff;
 }
@@ -189,6 +200,14 @@ nav {
         text-align: center;
     }
 }
+
+@media only screen and (max-width: 830px) {
+    .card-container{
+        flex-direction: column;
+        height: auto;
+    }
+}
+
 
 @media only screen and (max-width: 700px) {
     .show {
