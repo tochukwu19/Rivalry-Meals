@@ -1,3 +1,4 @@
+
 body {
     background-color: #fff;
     padding: 0;
@@ -174,17 +175,37 @@ nav {
 footer {
     height: 60vh;
     background-color: #161616;
-    position: relative;
     bottom: -700px;
     width: 100%;
 }
 .flex-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     color: #fff;
+    height: 60vh;
 }
 .list {
+    padding: 0 2em;
+}
+.list ul {
+    list-style-type: none;
+    font-family: 'Quicksand', sans-serif;
+}
+.list ul li {
+   padding: 5px 5px;
+}
+.foot-head {
+    color: #DCBE80;
+    font-family: 'Libre Baskerville', serif;
+    padding-bottom: 10px;
+}
+.locate {
+    width: 18em;
+    display: flex;
+    position: relative;
+    top: 0;
     
 }
