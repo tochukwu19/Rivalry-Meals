@@ -1,3 +1,4 @@
+
 body {
     background-color: #fff;
     padding: 0;
@@ -231,7 +232,7 @@ nav {
 }
 
 footer {
-    height: 60vh;
+    height: auto;
     background-color: #161616;
     bottom: -700px;
     width: 100%;
@@ -239,6 +240,36 @@ footer {
 
 .flex-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    justify-self: baseline;
+    align-items: center;
+    color: #fff;
+    height: auto;
+}
+.list {
+    padding: 0 2em;
+}
+.list ul {
+    list-style-type: none;
+    font-family: 'Quicksand', sans-serif;
+}
+.list ul li {
+   padding: 5px 5px;
+}
+.foot-head {
+    color: #DCBE80;
+    font-family: 'Libre Baskerville', serif;
+    padding-bottom: 10px;
+}
+.locate {
+    width: 18em;
+    display: flex;
+    position: relative;
+    top: 0;   
+}
+@media only screen and (max-width: 350px) {
+    .flex-container {
+        flex-direction: column;
+    }
 }
