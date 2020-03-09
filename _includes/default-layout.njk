@@ -3,11 +3,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
     
-    <p>Yooo!</p>
-
+    <nav>
+        <div class="nav-menu">
+            <li class="show"><a href="#">View menu</a></li>
+            <li class="hide"><a href="#">About</a></li>
+            <li class="hide"><a href="#">Locate us</a></li>
+            <a href="#"><img class="logo" src="assets\RIVAL MEALS APPROVED-01.png"></a>
+            <li class="hide"><a href="#">Our menu</a></li>
+            <li class="hide"><a href="#">Book us</a></li>
+            <li class="hide"><a href="#">Blog</a></li>
+            <li class="show hamburger">
+                    <div class="ham ham1"></div>
+                    <div class="ham ham2"></div>
+                    <div class="ham ham3"></div>
+            </li>
+        
+    </nav>
+    <script src="/assets/script.js"></script>
     {{content | safe}}
 </body>
 </html>
