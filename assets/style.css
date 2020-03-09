@@ -133,13 +133,15 @@ nav {
     margin-left: 130px;
     position: relative;
     top: 55px;
+    font-size: 23px;
 }
 
-.card-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 600px;
+.jack{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 100vh;
 }
 
 .card {
@@ -200,12 +202,20 @@ nav {
         justify-content: center;
         text-align: center;
     }
+
+    .hero{
+        height: auto;
+    }
+
+    .jack{
+        margin-top: 100px;
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 830px) {
-    .card-container{
-        flex-direction: column;
-        height: auto;
+    .card{
+        margin-bottom: 80px;
     }
 }
 
