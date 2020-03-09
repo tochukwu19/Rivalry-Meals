@@ -79,12 +79,12 @@ nav {
 }
 
 /* Hero */
-.hero{
+.hero {
     height: 84vh;
     width: 100%;
 }
 
-.hero-content-desktop{
+.hero-content-desktop {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -92,38 +92,77 @@ nav {
     width: 100%;
 }
 
-.hero-content-mobile{
+.hero-content-mobile {
     display: none;
 }
-.hero h1{
+
+.hero h1 {
     font-size: 36px;
     font-weight: lighter;
     color: #DCBE80;
 }
 
-.hero p{
+.hero p {
     margin-bottom: 50px;
 }
 
-.off-img1{
+.off-img1 {
     width: 400px;
 }
 
-.hero a{
+.hero a {
     text-decoration: none;
     color: #fff;
     background-color: #1B510A;
     padding: 15px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    
 }
 
-.off-img{
+
+.off-img {
     width: 400px;
     transform: translate(-250px, 0px) rotate(180deg);
     position: absolute;
 }
+
+/* Jack */
+.jackp {
+    color: #1B510A;
+    margin-left: 130px;
+    position: relative;
+    top: 55px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+}
+
+.card{
+    height: 330px;
+    width: 260px;
+    background-color: #F6F5F3;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card p{
+    font-family: "Quicksand", sans-serif;
+}
+
+.grin{
+    background-color: #1B510A;
+    color: #fff;
+}
+
 @media only screen and (max-width: 1035px) {
     .nav-menu {
         width: 70%;
@@ -137,18 +176,18 @@ nav {
 }
 
 @media only screen and (max-width: 800px) {
-   .hero-content-desktop{
-       display: none;
-   }
+    .hero-content-desktop {
+        display: none;
+    }
 
-   .hero-content-mobile{
-       display: block;
-       width: 100%;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       text-align: center;
-   }
+    .hero-content-mobile {
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -171,13 +210,14 @@ nav {
         width: 100%;
     }
 }
+
 footer {
     height: 60vh;
     background-color: #161616;
-    position: relative;
     bottom: -700px;
     width: 100%;
 }
+
 .flex-container {
     display: flex;
     justify-content: center;
