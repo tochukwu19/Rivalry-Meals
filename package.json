@@ -11,5 +11,13 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tochukwu19/Rivalry-Meals.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tochukwu19/Rivalry-Meals/issues"
+  },
+  "homepage": "https://github.com/tochukwu19/Rivalry-Meals#readme"
 }
