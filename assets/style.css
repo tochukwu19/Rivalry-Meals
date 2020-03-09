@@ -111,3 +111,12 @@ nav {
         width: 100%;
     }
 }
+footer {
+    height: 60vh;
+    background-color: #161616;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    justify-self: baseline;
+}
