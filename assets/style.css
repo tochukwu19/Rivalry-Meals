@@ -268,7 +268,7 @@ footer {
 .blog-heading {
     margin-left: 11%;
     font-size: 25px;
-    /* font-family: 'Libre Baskerville', serif; */
+    font-family: 'Libre Baskerville', serif;
     color: #1B510A;
 }
 .blog-sect {
@@ -287,6 +287,7 @@ footer {
     }
     .blog-text {
         margin-left: 0px;
+        /* width: 80%; */
     }
     .blog-image {
         margin-left: 23px;
@@ -301,7 +302,7 @@ footer {
 }
 .blog-text {
     margin-left: 30px;
-    width: 60%;
+    max-width: 60%;
 }
 .blog-text p {
     font-family: 'Quicksand', sans-serif;
