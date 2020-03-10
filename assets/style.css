@@ -1,4 +1,3 @@
-
 body {
     background-color: #fff;
     padding: 0;
@@ -125,6 +124,7 @@ nav {
     width: 400px;
     transform: translate(-250px, 0px) rotate(180deg);
     position: absolute;
+    z-index: -1;
 }
 
 /* Jack */
@@ -133,16 +133,18 @@ nav {
     margin-left: 130px;
     position: relative;
     top: 55px;
+    font-size: 23px;
 }
 
-.card-container{
+.jack {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 500px;
+    flex-wrap: wrap;
+    height: 100vh;
 }
 
-.card{
+.card {
     height: 330px;
     width: 260px;
     background-color: #F6F5F3;
@@ -155,11 +157,22 @@ nav {
     text-align: center;
 }
 
-.card p{
+.card p {
     font-family: "Quicksand", sans-serif;
 }
 
-.grin{
+.card img {
+    width: 150px;
+    position: relative;
+    top: -80px;
+
+}
+
+.big-img {
+    width: 125px !important;
+}
+
+.grin {
     background-color: #1B510A;
     color: #fff;
 }
@@ -189,7 +202,28 @@ nav {
         justify-content: center;
         text-align: center;
     }
+
+    .hero {
+        height: auto;
+    }
+
+    .jack {
+        margin-top: 100px;
+        height: auto;
+    }
+
+    .jackp {
+        margin-bottom: 150px;
+    }
+
 }
+
+@media only screen and (max-width: 830px) {
+    .card {
+        margin-bottom: 80px;
+    }
+}
+
 
 @media only screen and (max-width: 700px) {
     .show {
@@ -212,21 +246,53 @@ nav {
     }
 }
 #blog {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto 100vh;
 }
 .blog-heading {
     color: #1B510A;
     font-family: 'Libre Baskerville', serif;
     font-size: 25px;
-    margin-left: 90px;
+    /* margin-left: 90px; */
 }
-.blog-card {
+.flex-container {
+    height: auto 80vh;
+    display: flex;
+    
+    flex-direction: column;
+}
+.post-card {
+    width: 250px;
+    height: 250px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 15%;
-  }
-.card-main {
-    padding: 2px 16px;
+    margin: 15px 30px; 
+}
+.post-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card-image {
+    background-image: url(/assets/pepper\ and\ veggies.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 130px;
+    border-top-right-radius: 50px;
+}
+.post-p {
+    color: #161616;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    padding: 8px 8px;
 }
 footer {
     height: 60vh auto;
@@ -244,27 +310,33 @@ footer {
     color: #fff;
     height: 60vh auto;
 }
+
 .list {
     padding: 0 2em;
 }
+
 .list ul {
     list-style-type: none;
     font-family: 'Quicksand', sans-serif;
 }
+
 .list ul li {
-   padding: 5px 5px;
+    padding: 5px 5px;
 }
+
 .foot-head {
     color: #DCBE80;
     font-family: 'Libre Baskerville', serif;
     padding-bottom: 10px;
 }
+
 .locate {
     width: 18em;
     display: flex;
     position: relative;
-    top: 0;   
+    top: 0;
 }
+
 @media only screen and (max-width: 350px) {
     .flex-container {
         flex-direction: column;
