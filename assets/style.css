@@ -94,6 +94,12 @@ nav {
     width: 100%;
 }
 
+.hero-content-desktop p,
+.hero-content-mobile p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+
 .hero-content-mobile {
     display: none;
 }
@@ -159,9 +165,9 @@ nav {
     text-align: center;
 }
 
-.card:hover{
-      background-color: #1B510A;
-      color: #fff;
+.card:hover {
+    background-color: #1B510A;
+    color: #fff;
 }
 
 .card p {
@@ -182,15 +188,18 @@ nav {
 
 /* Footer */
 footer {
-    height: auto;
+    height: 350px;
     background-color: #161616;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .flex-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     color: #fff;
     height: 350px;
 }
@@ -228,15 +237,21 @@ footer {
         height: auto;
     }
 
-    .hero-h1{
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .hero-h1 {
         font-size: 20px;
     }
 
-    .off-img1{
+    .off-img1 {
         width: 300px;
     }
 
-    .list{
+    .list {
         padding: 0px;
     }
 }
