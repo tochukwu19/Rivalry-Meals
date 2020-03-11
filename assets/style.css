@@ -276,6 +276,85 @@ footer {
         width: 100% !important;
     }
 }
+#blog {
+    min-height: 100vh;
+    padding: 20px 20px;
+}
+.blog-heading {
+    margin-left: 11%;
+    font-size: 25px;
+    /* font-family: 'Libre Baskerville', serif; */
+    color: #1B510A;
+}
+.blog-sect {
+    display: flex;
+    padding: 50px 50px 0 34px ;
+    justify-content: center;
+}
+@media only screen and (max-width: 700px) {
+    .blog-sect {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .blog-heading {
+        margin-left: 0;
+    }
+    .blog-text {
+        margin-left: 0px;
+    }
+    .blog-image {
+        margin-left: 23px;
+    }
+}
+.blog-image {
+    background-image: url(/assets/Banga_soup_w9yxzh.jpg);
+    background-size: cover;
+    width: 260px;
+    height: 241px;
+    border-radius: 20px;
+}
+.blog-text {
+    margin-left: 30px;
+    width: 60%;
+}
+.blog-text p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    padding: 15px 0 30px 0;
+}
+.next-p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    margin: 10% 11%;
+    font-size: 20px;
+}
+.blog-link {
+    background-color: #161616;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-decoration: none;
+}
+footer {
+    height: 60vh auto;
+    background-color: #161616;
+    bottom: -700px;
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 60vh auto;
+}
 
 @media only screen and (max-width: 750px) {
     .nav-menu {
