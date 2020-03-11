@@ -265,7 +265,6 @@ footer {
     color: #1B510A;
     border-bottom: 1px solid #1B510A;
     width: fit-content;
-    margin: auto;
     padding: 5px;
 
 }
@@ -273,7 +272,6 @@ footer {
 .blog-sect {
     display: flex;
     padding: 20px 0 0 0px;
-    justify-content: center;
 }
 
 
@@ -299,7 +297,7 @@ footer {
 .next-p {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    margin: 10% 11%;
+    margin: 10% 0%;
     font-size: 20px;
     border-bottom: 1px solid #161616;
     width: fit-content;
