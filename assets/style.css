@@ -140,7 +140,7 @@ nav {
     color: #1B510A;
     margin-left: 130px;
     position: relative;
-    top: 55px;
+    top: 75px;
     font-size: 23px;
 }
 
@@ -371,9 +371,14 @@ footer {
     max-width: 60%;
 }
 
+.blog-text h3{
+    font-weight: lighter;
+    color: #1B510A;
+}
+
 .blog-text p {
     font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
+    font-size: 17.5px;
     margin-bottom: 20px;
 }
 
@@ -501,12 +506,31 @@ footer {
 
     .blog-text {
         margin-left: 0px;
-        width: 80%;
         max-width: 100%;
+    }
+
+    .blog-text p{
+        font-size: 16px;
     }
     
     .formsec-cont-left img{
         width: 200px;
+    }
+
+    .locate-text p{
+        font-size: 17px;
+    }
+
+    .locate-text h4{
+        font-size: 20px;
+    }
+
+    .form-text p {
+        font-size: 17px;
+    }
+
+    .form-text h2 {
+        font-size: 20px;
     }
 
 }
@@ -546,7 +570,7 @@ footer {
     }
 
     .jack {
-        margin-top: 300px;
+        margin-top: 150px;
         height: auto;
     }
 
@@ -572,8 +596,11 @@ footer {
     }
 
     .formsec-cont-left img {
-        transform: translateY(0px);
-        margin-top: 15px;
+        display: none;
+    }
+
+    .locate-image img {
+        display: none;
     }
 
 }
