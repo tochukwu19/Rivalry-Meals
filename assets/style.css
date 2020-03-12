@@ -311,12 +311,12 @@ footer {
     color: #161616;
 }
 /* the image that goes off the screen in the locate section */
-/* .off-img2 {
+.off-img2 {
     width: 300px;
     transform: translate(1050px, -180px) rotate(0deg);
     position: absolute;
     z-index: 1;
-} */
+}
 @media only screen and (max-width: 950px) {
     .locate-flex {
         display: flex;
