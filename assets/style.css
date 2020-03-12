@@ -115,7 +115,7 @@ nav {
 }
 
 .off-img1 {
-    width: 500px;
+    width: 400px;
 }
 
 .hero a {
@@ -131,13 +131,6 @@ nav {
 .off-img {
     width: 400px;
     transform: translate(-250px, 0px) rotate(180deg);
-    position: absolute;
-    z-index: -1;
-}
-
-.off-img2 {
-    width: 400px;
-    transform: translate(750px, 500px);
     position: absolute;
     z-index: -1;
 }
@@ -208,6 +201,7 @@ nav {
 .big-img {
     width: 125px !important;
 }
+
 
 /* Form Section */
 .formsec {
@@ -342,12 +336,6 @@ footer {
     padding-bottom: 10px;
 }
 
-.locate {
-    width: 18em;
-    display: flex;
-    position: relative;
-    top: 0;
-}
 
 /* Blog */
 #blog {
@@ -410,20 +398,68 @@ footer {
     text-decoration: none;
 }
 
+
+/* Location */
+#location {
+    background-color: #ffffff;
+    min-height: 100vh;
+    padding: 30px 100px;
+}
+
+.locate-flex {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.locate-image {
+    background-image: url(/assets/canteen.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 300px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+
+.locate-text {
+    text-align: right;
+}
+
+.locate {
+    width: 18em;
+    display: flex;
+    position: relative;
+    top: 0;
+}
+
+.locate-text h4 {
+    font-size: 25px;
+    font-family: 'Libre Baskerville', serif;
+    color: #1B510A;
+    font-weight: 200;
+}
+
+.locate-text p {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: #161616;
+}
+
 @media only screen and (max-width: 600px) {
     .flex-container {
         flex-direction: column;
         height: auto;
     }
 
-    footer {
+    footer{
         display: flex;
         justify-content: center;
         align-items: center;
         height: auto;
         padding-top: 0px;
     }
-
     .hero-h1 {
         font-size: 20px;
     }
@@ -457,18 +493,35 @@ footer {
         width: 100% !important;
     }
 
-    .blog-text {
-        margin-left: 0px !important;
-        max-width: 100% !important;
-    }
-
     .blog-sect {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
+    .blog-heading {
+        margin-left: 0;
+    }
+
+    .blog-text {
+        margin-left: 0px;
+        width: 80%;
+        max-width: 100%;
+    }
+
 }
+
+@media only screen and (max-width: 950px) {
+    .locate-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .locate-image {
+        height: 500px;
+        width: 300px;
+    }
+}
+
 
 
 @media only screen and (max-width: 750px) {
@@ -496,7 +549,7 @@ footer {
     }
 
     .jack {
-        margin-top: 150px;
+        margin-top: 300px;
         height: auto;
     }
 
