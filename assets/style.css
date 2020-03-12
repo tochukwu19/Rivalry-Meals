@@ -276,6 +276,57 @@ footer {
         width: 100% !important;
     }
 }
+#location {
+    background-color: #ffffff;
+    min-height: 100vh;
+    padding: 30px 100px;
+}
+.locate-flex {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+.locate-image {
+    background-image: url(/assets/canteen.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 300px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+.locate-text {
+    text-align: right;
+}
+.locate-text h4 {
+    font-size: 25px;
+    font-family: 'Libre Baskerville', serif;
+    color: #1B510A;
+    font-weight: 200;
+}
+.locate-text p {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: #161616;
+}
+/* the image that goes off the screen in the locate section */
+/* .off-img2 {
+    width: 300px;
+    transform: translate(1050px, -180px) rotate(0deg);
+    position: absolute;
+    z-index: 1;
+} */
+@media only screen and (max-width: 950px) {
+    .locate-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .locate-image {
+        height: 500px;
+        width: 300px;
+    }
+}
 #blog {
     min-height: 100vh;
     padding: 20px 20px;
