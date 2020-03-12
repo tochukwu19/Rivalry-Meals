@@ -173,6 +173,7 @@ nav {
     border-bottom-right-radius: 20px;
     width: fit-content;
     margin: auto;
+    margin-bottom: 15px;
 }
 
 .card {
@@ -208,6 +209,99 @@ nav {
     width: 125px !important;
 }
 
+/* Form Section */
+.formsec {
+    height: 100vh;
+    width: 100%;
+    background-color: #161616;
+    display: flex;
+    align-items: center;
+}
+
+.formsec-cont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-text h2 {
+    color: #DCBE80;
+    font-weight: lighter;
+}
+
+.form-text p {
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+}
+
+.formsec-cont img {
+    width: 330px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field input {
+    border: 1px solid #DCBE80;
+    color: #DCBE80;
+    font-family: "Quicksand",
+        sans-serif;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+
+.form-field textarea {
+    border: 1px solid #DCBE80;
+    color: #DCBE80;
+    font-family: "Quicksand",
+        sans-serif;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    height: 150px;
+}
+
+.form-field input::placeholder {
+    color: #DCBE80;
+    font-family: "Quicksand",
+        sans-serif;
+
+}
+
+.form-field textarea::placeholder {
+    color: #DCBE80;
+    font-family: "Quicksand",
+        sans-serif;
+
+}
+
+.formsec-cont-right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.form-field a {
+    text-decoration: none;
+    color: #161616;
+    background-color: #DCBE80;
+    padding: 15px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: fit-content;
+    font-family: "Quicksand",
+        sans-serif;
+    font-weight: bold;
+}
+
+.formsec-cont-left img {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform: translateY(-100px);
+}
 
 /* Footer */
 footer {
@@ -254,6 +348,7 @@ footer {
     position: relative;
     top: 0;
 }
+
 /* Blog */
 #blog {
     padding: 50px 20px;
@@ -410,6 +505,26 @@ footer {
         margin-left: 90px;
     }
 
+    .formsec {
+        height: auto;
+    }
+
+    .formsec-cont {
+        flex-direction: column;
+    }
+
+    .formsec-cont-right {
+        width: 70%;
+    }
+
+    .form-field a {
+        margin-bottom: 15px;
+    }
+
+    .formsec-cont-left img {
+        transform: translateY(0px);
+        margin-top: 15px;
+    }
 
 }
 
