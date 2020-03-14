@@ -134,6 +134,12 @@ nav {
 
 }
 
+.hero a:hover {
+    -webkit-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
+box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
+}
+
 
 .off-img {
     width: 400px;
@@ -178,6 +184,12 @@ nav {
     font-weight: bold;
 }
 
+.jack a:hover {
+    -webkit-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
+box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
+}
+
 .card {
     height: 330px;
     width: 260px;
@@ -189,11 +201,15 @@ nav {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    transition: ease-in 0.15s;
 }
 
 .card:hover {
     background-color: #1B510A;
     color: #fff;
+    -webkit-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
+box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
 }
 
 .card p {
@@ -292,6 +308,12 @@ nav {
     width: fit-content;
     font-family: var(--font-family2);
     font-weight: bold;
+}
+
+.form-field a:hover {
+    -webkit-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
+box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
 }
 
 .formsec-cont-left img {
@@ -406,6 +428,12 @@ footer {
     text-decoration: none;
 }
 
+.blog-link:hover {
+    -webkit-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
+box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
+}
+
 
 /* Location */
 #location {
@@ -418,6 +446,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-flow: row-reverse;
 }
 
 .locate-image img {
@@ -536,7 +565,7 @@ footer {
         font-size: 20px;
     }
 
-    .locate-text{
+    .locate-text {
         text-align: left;
         padding: 20px;
     }
