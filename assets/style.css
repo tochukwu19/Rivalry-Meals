@@ -2,11 +2,16 @@ body {
     background-color: #fff;
     padding: 0;
     margin: 0;
-    font-family: 'Libre Baskerville',
-        serif;
-
+    font-family: var(--font-family1);
     overflow-x: hidden;
 
+}
+
+:root {
+    --font-family1: 'Libre Baskerville',
+        serif;
+    --font-family2: 'Quicksand',
+        serif;
 }
 
 nav {
@@ -96,7 +101,7 @@ nav {
 
 .hero-content-desktop p,
 .hero-content-mobile p {
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--font-family2);
     font-weight: bold;
 }
 
@@ -115,7 +120,7 @@ nav {
 }
 
 .off-img1 {
-    width: 400px;
+    width: 500px;
 }
 
 .hero a {
@@ -125,6 +130,8 @@ nav {
     padding: 15px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    font-family: var(--font-family2);
+
 }
 
 
@@ -159,7 +166,7 @@ nav {
 
 .jack a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     background-color: #DCBE80;
     padding: 15px;
     border-top-left-radius: 20px;
@@ -167,6 +174,8 @@ nav {
     width: fit-content;
     margin: auto;
     margin-bottom: 15px;
+    font-family: var(--font-family2);
+    font-weight: bold;
 }
 
 .card {
@@ -188,7 +197,7 @@ nav {
 }
 
 .card p {
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--font-family2);
 }
 
 .card img {
@@ -225,7 +234,7 @@ nav {
 
 .form-text p {
     color: #fff;
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--font-family2);
 }
 
 .formsec-cont img {
@@ -240,8 +249,7 @@ nav {
 .form-field input {
     border: 1px solid #DCBE80;
     color: #DCBE80;
-    font-family: "Quicksand",
-        sans-serif;
+    font-family: var(--font-family2);
     padding: 15px;
     margin-bottom: 15px;
     background-color: transparent;
@@ -250,8 +258,7 @@ nav {
 .form-field textarea {
     border: 1px solid #DCBE80;
     color: #DCBE80;
-    font-family: "Quicksand",
-        sans-serif;
+    font-family: var(--font-family2);
     padding: 15px;
     margin-bottom: 15px;
     background-color: transparent;
@@ -260,15 +267,12 @@ nav {
 
 .form-field input::placeholder {
     color: #DCBE80;
-    font-family: "Quicksand",
-        sans-serif;
-
+    font-family: var(--font-family2);
 }
 
 .form-field textarea::placeholder {
     color: #DCBE80;
-    font-family: "Quicksand",
-        sans-serif;
+    font-family: var(--font-family2);
 
 }
 
@@ -286,8 +290,7 @@ nav {
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     width: fit-content;
-    font-family: "Quicksand",
-        sans-serif;
+    font-family: var(--font-family2);
     font-weight: bold;
 }
 
@@ -322,7 +325,7 @@ footer {
 
 .list ul {
     list-style-type: none;
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--font-family2);
     padding: 0 !important;
 }
 
@@ -332,19 +335,19 @@ footer {
 
 .foot-head {
     color: #DCBE80;
-    font-family: 'Libre Baskerville', serif;
+    font-family: var(--font-family1);
     padding-bottom: 10px;
 }
 
 
 /* Blog */
 #blog {
-    padding: 50px 20px;
+    padding: 20px;
 }
 
 .blog-heading {
     font-size: 25px;
-    font-family: 'Libre Baskerville', serif;
+    font-family: var(--font-family1);
     color: #1B510A;
     border-bottom: 1px solid #1B510A;
     width: fit-content;
@@ -371,21 +374,21 @@ footer {
     max-width: 60%;
 }
 
-.blog-text h3{
+.blog-text h3 {
     font-weight: lighter;
     color: #1B510A;
 }
 
 .blog-text p {
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--font-family2);
     font-size: 17.5px;
     margin-bottom: 20px;
 }
 
 .next-p {
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--font-family2);
     font-weight: bold;
-    margin: 10% 0%;
+    margin: 30px 0%;
     font-size: 20px;
     border-bottom: 1px solid #161616;
     width: fit-content;
@@ -397,7 +400,7 @@ footer {
     padding: 15px 20px;
     color: #fff;
     font-size: 15px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--font-family2);
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     text-decoration: none;
@@ -412,16 +415,15 @@ footer {
 }
 
 .locate-flex {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.locate-image img{
-     border-top-left-radius: 20px;
-     border-bottom-right-radius: 20px;
-     transform: translateY(-100px);
-     width: 330px;
+.locate-image img {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 330px;
 }
 
 .locate-text {
@@ -437,14 +439,14 @@ footer {
 
 .locate-text h4 {
     font-size: 25px;
-    font-family: 'Libre Baskerville', serif;
+    font-family: var(--font-family1);
     color: #1B510A;
     font-weight: 200;
 }
 
 .locate-text p {
     font-size: 20px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--font-family2);
     color: #161616;
 }
 
@@ -454,15 +456,16 @@ footer {
         height: auto;
     }
 
-    footer{
+    footer {
         display: flex;
         justify-content: center;
         align-items: center;
         height: auto;
         padding-top: 0px;
     }
+
     .hero-h1 {
-        font-size: 20px;
+        font-size: 30px !important;
     }
 
     .off-img1 {
@@ -509,19 +512,19 @@ footer {
         max-width: 100%;
     }
 
-    .blog-text p{
+    .blog-text p {
         font-size: 16px;
     }
-    
-    .formsec-cont-left img{
+
+    .formsec-cont-left img {
         width: 200px;
     }
 
-    .locate-text p{
+    .locate-text p {
         font-size: 17px;
     }
 
-    .locate-text h4{
+    .locate-text h4 {
         font-size: 20px;
     }
 
@@ -533,6 +536,11 @@ footer {
         font-size: 20px;
     }
 
+    .locate-text{
+        text-align: left;
+        padding: 20px;
+    }
+
 }
 
 @media only screen and (max-width: 950px) {
@@ -540,7 +548,7 @@ footer {
         display: flex;
         flex-direction: column;
     }
- 
+
 }
 
 
@@ -569,8 +577,9 @@ footer {
         height: auto;
     }
 
+
     .jack {
-        margin-top: 150px;
+        margin-top: 100px;
         height: auto;
     }
 
@@ -585,10 +594,11 @@ footer {
 
     .formsec-cont {
         flex-direction: column;
+        padding: 20px;
     }
 
     .formsec-cont-right {
-        width: 70%;
+        width: 85%;
     }
 
     .form-field a {
