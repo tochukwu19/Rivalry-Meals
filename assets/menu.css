@@ -85,6 +85,68 @@ nav {
     transform: rotate(-45deg) translateX(-7px) translateY(5px);
 }
 
+/* Card */
+.card-cont {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 110px;
+}
+
+
+.card {
+    height: 330px;
+    width: 260px;
+    background-color: transparent;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transition: ease-in 0.15s;
+}
+
+.card h3 {
+    color: #DCBE80;
+    font-weight: lighter;
+}
+
+.card:hover {
+    background-color: #1B510A;
+}
+
+.card p {
+    font-family: var(--font-family2);
+}
+
+.card img {
+    width: 150px;
+    position: relative;
+    top: -80px;
+
+}
+
+/* Menu */
+.menu-head{
+    text-align: center;
+}
+
+.menu{
+    padding: 20px;
+}
+
+.menu h2{
+    color: #DCBE80;
+    font-weight: lighter;
+}
+
+.menu p{
+    color: #fff;
+    font-family: var(--font-family2);
+}
 
 /* Footer */
 footer {
@@ -123,4 +185,63 @@ footer {
     color: #DCBE80;
     font-family: var(--font-family1);
     padding-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding-top: 0px;
+    }
+
+    .list {
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .show {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .nav-menu>li {
+        list-style-type: none;
+        padding: 0px;
+        width: 10px;
+
+    }
+
+    .nav-menu {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .nav-menu {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .card {
+        margin-bottom: 80px;
+    }
+}
+
+@media only screen and (max-width: 1035px) {
+    .nav-menu {
+        width: 70%;
+    }
 }
