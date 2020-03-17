@@ -4,7 +4,6 @@ body {
     margin: 0;
     font-family: var(--font-family1);
     overflow-x: hidden;
-
 }
 
 :root {
@@ -13,7 +12,54 @@ body {
     --font-family2: 'Quicksand',
         serif;
 }
-
+.sidenav {
+    display: flex;
+    justify-content: space-around;
+    height: 0;
+    width: 100%;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: #161616; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden; /*Disable vertical scroll*/
+    transition: 0.5s;
+}
+  .nav-out{
+    height: 100%;
+  }
+  .sidenav-content {
+    position: relative;
+    top: 8%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; 
+    margin-top: 21px;
+  }
+  .sidenav a {
+    padding: 20px 0 35px 0;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Libre Baskerville', serif;
+    color: #ffffff;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  .sidenav a:hover, .sidenav a:focus {
+    color: #DCBE80;
+  }
+  .social-link {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 30;
+  }
+  .social-link img {
+      width: 25px;
+      height: 25px;
+  }
 nav {
     display: flex;
     justify-content: center;
@@ -71,9 +117,9 @@ nav {
 }
 
 .ham-tilt-left {
-    transform: rotate(45deg) translateX(-5px) translateY(-5px);
+    transform: rotate(45deg) translateX(-3px) translateY(-5px);
     width: 30px !important;
-
+    background-color: #fff;
 }
 
 .ham-no-show {
@@ -82,7 +128,8 @@ nav {
 }
 
 .ham-tilt-right {
-    transform: rotate(-45deg) translateX(-7px) translateY(5px);
+    transform: rotate(-45deg) translateX(-3px) translateY(5px);
+    background-color: #fff;
 }
 
 /* Hero */
@@ -362,9 +409,6 @@ footer {
     padding-bottom: 10px;
 }
 
-
-
-
 /* Location */
 #location {
     background-color: #ffffff;
@@ -373,6 +417,7 @@ footer {
 }
 
 .locate-flex {
+    padding: 80px 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -380,13 +425,11 @@ footer {
 }
 
 .locate-image img {
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     width: 330px;
 }
 
 .locate-text {
-    text-align: right;
+    text-align: left;
 }
 
 .locate {
@@ -407,6 +450,15 @@ footer {
     font-size: 20px;
     font-family: var(--font-family2);
     color: #161616;
+}
+
+.social {
+    display: flex;
+}
+.social img {
+    width: 30px;
+    height: 30px;
+    padding: 10px 20px 0 0;
 }
 
 @media only screen and (max-width: 600px) {

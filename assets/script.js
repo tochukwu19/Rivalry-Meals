@@ -1,11 +1,11 @@
-console.log("sup");
 
 const
-    ham = document.querySelector(".hamburger");
-    ham3 = document.querySelector(".ham3");
-    ham2 = document.querySelector(".ham2");
-    ham1 = document.querySelector(".ham1");
-
+    ham = document.querySelector(".hamburger"),
+    ham3 = document.querySelector(".ham3"),
+    ham2 = document.querySelector(".ham2"),
+    ham1 = document.querySelector(".ham1"),
+    link = document.querySelector(".stuff"),
+    nav = document.querySelector(".nav-out");
 
 // Hamburger JS
 
@@ -18,6 +18,4 @@ const menuOpen = e => {
 }
 
 ham.addEventListener("click", menuOpen);
-
-
-
+link.classList.remove("nav-out");
