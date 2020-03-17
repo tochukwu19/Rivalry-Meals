@@ -1,0 +1,52 @@
+nav {
+    background-color: #161616;
+}
+.nav-menu>li>a {
+    text-decoration: none;
+    color: #fff;
+}
+.nav-menu>li:hover {
+    border-bottom: 1px solid #fff;
+}
+#rice {
+    height: 100vh;
+    background-color: #161616;
+    text-align: center;
+}
+.rice-head {
+    color: #DCBE80;
+    width: 500px;
+    text-align: center;
+    border-bottom: 1px solid #DCBE80;
+    border-top: 1px solid #DCBE80;
+    margin-top: 20px;
+    display: inline-block;
+}
+.rice-head h4 {
+    margin: 0;
+    padding: 10px;
+    font-weight: 100;
+    font-family: var(--font-family1);
+}
+.rice-grid {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.rice1, .rice2, .rice3 {
+    height: 200px;
+    width: 300px;
+    background-color: #DCBE80;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+.rice1 h4 {
+    margin-top: 0;
+}
+.rice1 img, .rice2 img, .rice3 img {
+    width: 150px;
+}
