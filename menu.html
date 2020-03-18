@@ -14,10 +14,10 @@ layout: default-layout.njk
      <div id="navbar" class="sidenav">
         <div class="sidenav-content">
             <a href="/">Home</a>
-            <a href="#">Locate us</a>
-            <a href="">Our menu</a>
-            <a href="#">Bookings</a>
-            <a href="#">Blog</a>
+            <a class="stuff" href="/menu/">Our menu</a>
+            <a class="stuff" href="/index.html#bookings">Bookings</a>
+            <a class="stuff" href="/index.html#location">Locate us</a>
+            <a class="stuff" href="#blog">Blog</a>
             <div class="social-link">
                 <a href=""><img src="/assets/Icons/twitter-small.svg" alt="twitter icon"></a>
                 <a href=""><img src="/assets/Icons/youtube-small.svg" alt="youtube icon"></a>
@@ -29,12 +29,11 @@ layout: default-layout.njk
     <nav>
         <div class="nav-menu">
             <li class="show"><a href="../menu">View menu</a></li>
-            <li class="hide"><a href="#">About</a></li>
-            <li class="hide"><a href="#">Locate us</a></li>
-            <a href="/index.html"><img class="logo" src="../assets/images/RIVAL MEALS APPROVED-01.png"></a>
             <li class="hide"><a href="../menu">Our menu</a></li>
-            <li class="hide"><a href="#">Book us</a></li>
-            <li class="hide"><a href="#blog">Blog</a></li>
+            <li class="hide"><a href="/index.html#location">Locate us</a></li>
+            <a href="/index.html"><img class="logo" src="../assets/images/RIVAL MEALS APPROVED-01.png"></a>
+            <li class="hide"><a href="#blog">Our Blog</a></li>
+            <li class="hide"><a href="/index.html#bookings">Book us</a></li>
             <li class="show hamburger">
                 <div class="ham ham1"></div>
                 <div class="ham ham2"></div>
@@ -66,7 +65,7 @@ layout: default-layout.njk
                  <p>Local food right from<br> Abule Egba to<br> satisfy your tasty<br> village buds</p>
              </div>
          </div>
-         <div class="menu-content-large">
+         <div class="menu-content-large" id="menu-large">
              <h2>Meat and Beefs</h2>
             <div class="menu-content">
                 <div class="content">
