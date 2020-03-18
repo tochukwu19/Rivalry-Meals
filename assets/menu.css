@@ -83,7 +83,6 @@ nav {
 
 .nav-menu {
     height: 100px;
-    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -97,7 +96,7 @@ nav {
 
 .nav-menu>li {
     list-style-type: none;
-    padding: 5px;
+    padding: 15px;
 }
 
 .nav-menu>li:hover {
@@ -347,9 +346,12 @@ footer {
 
     .nav-menu>li {
         list-style-type: none;
-        padding: 0px;
         width: 10px;
 
+    }
+
+    .nav-menu {
+        width: 100%;
     }
 
 }

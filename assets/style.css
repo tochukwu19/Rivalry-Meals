@@ -98,7 +98,7 @@ nav {
 
 .nav-menu>li {
     list-style-type: none;
-    padding: 5px;
+    padding: 15px;
 }
 
 
@@ -132,7 +132,7 @@ nav {
     width: 30px;
     height: 1px;
     margin-bottom: 5px;
-    transition: 0.5s;
+    transition: 0.5s-;
 }
 
 .ham-tilt-left {
@@ -522,6 +522,10 @@ footer {
         display: block;
     }
 
+    .nav-menu{
+        width: 100%;
+    }
+
     .hide {
         display: none;
     }
@@ -563,7 +567,6 @@ footer {
 @media only screen and (max-width: 950px) {
     .locate-flex {
         display: flex;
-        flex-direction: column;
     }
 
 }
