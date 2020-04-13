@@ -8,6 +8,7 @@ body {
     margin: 0;
     font-family: var(--font-family1);
     overflow-x: hidden;
+    display: none;
 }
 
 :root {
