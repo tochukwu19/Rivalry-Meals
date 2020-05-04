@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #fff;
     padding: 0;
@@ -12,54 +16,66 @@ body {
     --font-family2: 'Quicksand',
         serif;
 }
+
 .sidenav {
     display: flex;
     justify-content: space-around;
     height: 0;
     width: 100%;
-    position: fixed; 
-    z-index: 1; 
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    background-color: #161616; 
-    overflow-x: hidden; /* Disable horizontal scroll */
-    overflow-y: hidden; /*Disable vertical scroll*/
+    background-color: #161616;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    overflow-y: hidden;
+    /*Disable vertical scroll*/
     transition: 0.5s;
 }
-  .nav-out{
-    height: 100%;
-  }
-  .sidenav-content {
-    position: relative;
-    top: 8%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; 
-    margin-top: 21px;
-  }
-  .sidenav a {
+
+.nav-out {
+    height: 100vh;
+}
+
+
+.sidenav-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sidenav a {
     padding: 20px 0 35px 0;
     text-decoration: none;
-    font-size: 17px;
-    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    letter-spacing: 1.3;
+    font-family: var(--font-family2);
     color: #ffffff;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
-  
-  .sidenav a:hover, .sidenav a:focus {
+    transition: 0.3s;
+}
+
+.sidenav a:hover,
+.sidenav a:focus {
     color: #DCBE80;
-  }
-  .social-link {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      flex-wrap: wrap;
-      margin: 30;
-  }
-  .social-link img {
-      width: 25px;
-      height: 25px;
-  }
+}
+
+.social-link {
+    display: grid;
+    grid-template-columns: 70px 30px;
+}
+
+.social-link img {
+    width: 35px;
+    height: 35px;
+}
+
+.overflowy{
+    overflow-y: hidden;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -67,7 +83,6 @@ nav {
 
 .nav-menu {
     height: 100px;
-    width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -77,12 +92,16 @@ nav {
 .nav-menu>li>a {
     text-decoration: none;
     color: #000;
+    padding: 10px;
 }
+
 
 .nav-menu>li {
     list-style-type: none;
-    padding: 5px;
+    padding: 15px;
 }
+
+
 
 .nav-menu>li:hover {
     border-bottom: 1px solid #000;
@@ -113,7 +132,7 @@ nav {
     width: 30px;
     height: 1px;
     margin-bottom: 5px;
-    transition: 0.5s;
+    transition: 0.5s-;
 }
 
 .ham-tilt-left {
@@ -182,9 +201,9 @@ nav {
 }
 
 .hero a:hover {
-    -webkit-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 45px 80px -36px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 45px 80px -36px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 45px 80px -36px rgba(0, 0, 0, 0.75);
 }
 
 
@@ -232,9 +251,9 @@ box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
 }
 
 .jack a:hover {
-    -webkit-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 45px 80px -36px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 45px 80px -36px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 45px 80px -36px rgba(0, 0, 0, 0.75);
 }
 
 .card {
@@ -254,9 +273,9 @@ box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
 .card:hover {
     background-color: #1B510A;
     color: #fff;
-    -webkit-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 45px 80px -36px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 45px 80px -36px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 45px 80px -36px rgba(0, 0, 0, 0.75);
 }
 
 .card p {
@@ -359,9 +378,9 @@ box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
 }
 
 .form-field a:hover {
-    -webkit-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
-box-shadow: 10px 45px 80px -36px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 45px 80px -36px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 45px 80px -36px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 45px 80px -36px rgba(0, 0, 0, 0.75);
 }
 
 .formsec-cont-left img {
@@ -379,6 +398,15 @@ footer {
     align-items: center;
     justify-content: center;
     padding-top: 100px;
+}
+
+.list a{
+    text-decoration: none;
+    color: #F6F5F3;
+}
+
+.list a:hover{
+    color: #DCBE80;
 }
 
 .flex-container {
@@ -417,7 +445,7 @@ footer {
 }
 
 .locate-flex {
-    padding: 80px 50px;
+    padding: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -455,6 +483,7 @@ footer {
 .social {
     display: flex;
 }
+
 .social img {
     width: 30px;
     height: 30px;
@@ -493,6 +522,10 @@ footer {
         display: block;
     }
 
+    .nav-menu{
+        width: 100%;
+    }
+
     .hide {
         display: none;
     }
@@ -504,11 +537,6 @@ footer {
 
     }
 
-    .nav-menu {
-        width: 100% !important;
-    }
-
-  
     .formsec-cont-left img {
         width: 200px;
     }
@@ -539,18 +567,11 @@ footer {
 @media only screen and (max-width: 950px) {
     .locate-flex {
         display: flex;
-        flex-direction: column;
     }
 
 }
 
 
-
-@media only screen and (max-width: 750px) {
-    .nav-menu {
-        width: 80%;
-    }
-}
 
 @media only screen and (max-width: 800px) {
     .hero-content-desktop {
@@ -587,7 +608,7 @@ footer {
 
     .formsec-cont {
         flex-direction: column;
-        padding: 20px;
+        padding: 10px;
     }
 
     .formsec-cont-right {
@@ -611,11 +632,5 @@ footer {
 @media only screen and (max-width: 830px) {
     .card {
         margin-bottom: 80px;
-    }
-}
-
-@media only screen and (max-width: 1035px) {
-    .nav-menu {
-        width: 70%;
     }
 }

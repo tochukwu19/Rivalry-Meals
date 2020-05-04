@@ -15,11 +15,11 @@ layout: default-layout.njk
 <body>
     <div id="navbar" class="sidenav">
         <div class="sidenav-content">
-            <a href="">About</a>
+            <a href="/">Home</a>
+            <a class="stuff" href="/menu/">Our menu</a>
+            <a class="stuff" href="#bookings">Bookings</a>
             <a class="stuff" href="#location">Locate us</a>
-            <a href="/menu/">Our menu</a>
-            <a href="#">Bookings</a>
-            <a href="#">Blog</a>
+            <a class="stuff" href="#blog">Blog</a>
             <div class="social-link">
                 <a href=""><img src="/assets/Icons/twitter-small.svg" alt="twitter icon"></a>
                 <a href=""><img src="/assets/Icons/youtube-small.svg" alt="youtube icon"></a>
@@ -31,18 +31,17 @@ layout: default-layout.njk
     <nav>
         <div class="nav-menu">
             <li class="show"><a href="./menu">View menu</a></li>
-            <li class="hide"><a href="#">About</a></li>
-            <li class="hide"><a href="#">Locate us</a></li>
-            <a href="/"><img class="logo" src="./assets/images/RIVAL MEALS APPROVED-01.png"></a>
             <li class="hide"><a href="./menu">Our menu</a></li>
-            <li class="hide"><a href="#">Book us</a></li>
-            <li class="hide"><a href="#blog">Blog</a></li>
+            <li class="hide"><a href="#location">Locate us</a></li>
+            <a href="/"><img class="logo" src="./assets/images/RIVAL MEALS APPROVED-01.png"></a>
+            <li class="hide"><a href="#blog">Our Blog</a></li>
+            <li class="hide"><a href="#bookings">Book us</a></li>
             <li class="show hamburger">
-                    <div class="ham ham1"></div>
-                    <div class="ham ham2"></div>
-                    <div class="ham ham3"></div>
+                <div class="ham ham1"></div>
+                <div class="ham ham2"></div>
+                <div class="ham ham3"></div>
             </li>
-       
+
     </nav>
     <section class="hero">
         <div class="hero-content-desktop">
@@ -62,7 +61,7 @@ layout: default-layout.njk
                     <img class="off-img1" src="./assets/images/hro image group.png" alt="side meal">
                 </div>
                 <p>View our menu with a<br> variety of tasty meal</p>
-                <a href="#">View Menu</a>
+                <a href="/menu/">View Menu</a>
             </div>
 
         </div>
@@ -72,26 +71,26 @@ layout: default-layout.njk
     <section class="jack">
         <div class="card-cont">
             <div class="card">
-                <img src="./assets/images/kindpng_4894455.png" alt="head meal">
-                <h3>Meats and Beefs</h3>
-                <p>Local food right from<br> Abule Egba to<br> satisfy your tasty<br> village buds</p>
-            </div>
-            <div class="card">
-                <img src="./assets/images/kisspng-italian-cuisine-pizza-pasta-food-plate-healthy-food-5abb864701e2b7.3892346415222390470077.png"
-                    class="big-img" alt="head meal">
+                <img src="./assets/images/poundo.jpg" alt="head meal1">
                 <h3>Local</h3>
                 <p>Local food right from<br> Abule Egba to<br> satisfy your tasty<br> village buds</p>
             </div>
             <div class="card">
-                <img src="./assets/images/kisspng-beefsteak-barbecue-sauce-jd-com-black-pepper-steak-5a722753d06dc3.9853677515174306118537.png"
-                    alt="head meal">
-                <h3>International</h3>
+                <img src="./assets/jollof-rice.png"
+                    class="big-img" alt="head meal2">
+                <h3>Rice</h3>
+                <p>Local food right from<br> Abule Egba to<br> satisfy your tasty<br> village buds</p>
+            </div>
+            <div class="card">
+                <img src="./assets/images/Ellipse 2-1.png"
+                    alt="head meal3">
+                <h3>Grills</h3>
                 <p>Local food right from<br> Abule Egba to<br> satisfy your tasty<br> village buds</p>
             </div>
         </div>
-        <a href="#">View Full Menu</a>
+        <a href="/menu#menu-large">View Full Menu</a>
     </section>
-    <section class="formsec">
+    <section class="formsec" id="bookings">
         <div class="formsec-cont">
             <div class="formsec-cont-left">
                 <img src="./assets/images/casey-lee-awj7sRviVXo-unsplash.jpg" alt="Form image">
@@ -125,18 +124,20 @@ layout: default-layout.njk
                 <h4>We're closer than you think</h4>
                 <p>52 off cresent road Lagos <br> Be sure to drop by we love beautiful faces </p>
                 <h4>All over the web too <br> peekaboo!<h4>
-                <p>Follow us on social media to see tasty meals and updates</p>
-                <div class="social">
-                    <a href=""><img src="/assets/Icons/twitter.svg" alt="twitter icon"></a>
-                    <a href=""><img src="/assets/Icons/youtube.svg" alt="youtube icon"></a>
-                    <a href=""><img src="/assets/Icons/ig.svg" alt="instagram icon"></a>
-                    <a href=""><img src="/assets/Icons/pintrest.svg" alt="pintrest icon"></a>
-                </div>
-            </div>         
+                        <p>Follow us on social media to see tasty meals and updates</p>
+                        <div class="social">
+                            <a href=""><img src="/assets/Icons/twitter.svg" alt="twitter icon"></a>
+                            <a href=""><img src="/assets/Icons/youtube.svg" alt="youtube icon"></a>
+                            <a href=""><img src="/assets/Icons/ig.svg" alt="instagram icon"></a>
+                            <a href=""><img src="/assets/Icons/pintrest.svg" alt="pintrest icon"></a>
+                        </div>
+            </div>
         </div>
     </section>
 </body>
 </section>
-</body>
+
 <script src="/assets/script.js"></script>
+</body>
+
 </html>
