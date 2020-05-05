@@ -215,15 +215,13 @@ nav {
 }
 
 .menu-content-large h2 {
-    margin-bottom: 50px;
     color: #DCBE80;
     font-weight: lighter;
     border-bottom: 1px solid #DCBE80;
     border-top: 2px solid #DCBE80;
     padding: 15px;
     width: fit-content;
-    margin: auto;
-    margin-top: 30px;
+    margin: 50px auto;
 }
 
 .whitebg {
@@ -235,7 +233,7 @@ nav {
 }
 
 .menu-content-large {
-    height: 500px;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
