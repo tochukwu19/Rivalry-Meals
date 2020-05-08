@@ -29,3 +29,5 @@ ham.addEventListener("click", menuOpen);
 
     });
 });
+
+AOS.init();
