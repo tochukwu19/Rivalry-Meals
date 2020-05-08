@@ -250,9 +250,12 @@ nav {
 
 .content {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     text-align: left;
+}
+
+.content div{
+    margin-left: 15px;
 }
 
 .menu h2 {
@@ -330,6 +333,9 @@ footer {
 
     .list {
         padding: 0px;
+    }
+    .content div{
+        margin-left: 0px;
     }
 }
 
