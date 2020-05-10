@@ -100,6 +100,9 @@ nav {
     padding: 10px;
 }
 
+.logo-list{
+    border-bottom: hidden !important;
+}
 
 .nav-menu>ul>li {
     list-style-type: none;

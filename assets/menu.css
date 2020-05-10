@@ -61,6 +61,10 @@ body {
     /* Transition effects on hover (color) */
 }
 
+.logo-list {
+    border-bottom: hidden !important;
+}
+
 .sidenav a:hover,
 .sidenav a:focus {
     color: #DCBE80;
