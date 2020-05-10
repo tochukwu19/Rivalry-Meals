@@ -4,14 +4,16 @@ layout: default-layout.njk
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Menu</title>
     <link rel="stylesheet" href="/assets/menu.css">
 </head>
+
 <body>
-     <div id="navbar" class="sidenav">
+    <div id="navbar" class="sidenav">
         <div class="sidenav-content">
             <a href="/">Home</a>
             <a class="stuff" href="/menu/">Our menu</a>
@@ -28,11 +30,12 @@ layout: default-layout.njk
     </div>
     <nav>
         <div class="nav-menu">
-            <li class="show"><a href="../menu">View menu</a></li>
+         <ul>
+            <li class="show"><a href="../menu">View<br> menu</a></li>
             <li class="hide"><a href="../menu">Our menu</a></li>
             <li class="hide"><a href="/index.html#location">Locate us</a></li>
-            <a href="/index.html"><img class="logo"
-                    src="https://res.cloudinary.com/teecodes/image/upload/v1588958941/RIVAL_MEALS_APPROVED-01_urmn5g.png"></a>
+            <a href="/index.html" name="logo"><img class="logo"
+                    src="https://res.cloudinary.com/teecodes/image/upload/v1588958941/RIVAL_MEALS_APPROVED-01_urmn5g.png" alt="logo"></a>
             <li class="hide"><a href="#blog">Our Blog</a></li>
             <li class="hide"><a href="/index.html#bookings">Book us</a></li>
             <li class="show hamburger">
@@ -40,44 +43,46 @@ layout: default-layout.njk
                 <div class="ham ham2"></div>
                 <div class="ham ham3"></div>
             </li>
-    
+        </ul>
     </nav>
     <section class="menu-head">
         <div class="menu">
-            <h2 data-aos="fade-up" data-aos-duration="1800">Hang on tight, we know how hard it is to select from our menu of tasty meals.</h2>
-            <p data-aos="fade-up" data-aos-duration="1800">Tasty and nutritious meals from all categories to fill your stomach and satisfy your taste buds.<br> Browse through our menu and make your pick.</p>
+            <h2 data-aos="fade-up" data-aos-duration="1800">Hang on tight, we know how hard it is to select from our
+                menu of tasty meals.</h2>
+            <p data-aos="fade-up" data-aos-duration="1800">Tasty and nutritious meals from all categories to fill your
+                stomach and satisfy your taste buds.<br> Browse through our menu and make your pick.</p>
         </div>
-         <div class="card-cont">
-             <div class="card" data-aos="fade-down" data-aos-duration="2000">
-                 <img src="https://res.cloudinary.com/teecodes/image/upload/v1588958942/stakeveg_wxxw4m.png"
-                     alt="head meal">
-                 <h3>Rice</h3>
-                 <p>Mixed variety of nutritous <br>rice meals<br> ready to bserved<br></p>
-             </div>
-             <div class="card" data-aos="fade-up" data-aos-duration="2000">
-                 <img src="https://res.cloudinary.com/teecodes/image/upload/v1588958944/wings_wadajm.png"
-                     class="big-img" alt="head meal">
-                 <h3>Grills</h3>
-                 <p>All kinds of specials<br>grilled to perfection<br> village buds</p>
-             </div>
-             <div class="card" data-aos="fade-down" data-aos-duration="2000">
-                 <img src="https://res.cloudinary.com/teecodes/image/upload/v1588958916/egusi_htaskz.png"
-                     alt="head meal">
-                 <h3>Local</h3>
-                 <p>Delicious Nigerian local<br> delicacies to <br> satisfy your cravings<br></p>
-             </div>
-         </div>
-         <div class="menu-content-large" id="menu-large">
-             <h2>Grills and Sandwich</h2>
-            <div class="menu-content" >
-                <!-- <div class="content" data-aos="fade-up-right" data-aos-duration="2000">
+        <div class="card-cont">
+            <div class="card" data-aos="fade-down" data-aos-duration="2000">
+                <img src="https://res.cloudinary.com/teecodes/image/upload/v1588958942/stakeveg_wxxw4m.png"
+                    alt="head meal">
+                <h3>Rice</h3>
+                <p>Mixed variety of nutritous <br>rice meals<br> ready to bserved<br></p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-duration="2000">
+                <img src="https://res.cloudinary.com/teecodes/image/upload/v1588958944/wings_wadajm.png" class="big-img"
+                    alt="head meal">
+                <h3>Grills</h3>
+                <p>All kinds of specials<br>grilled to perfection<br> village buds</p>
+            </div>
+            <div class="card" data-aos="fade-down" data-aos-duration="2000">
+                <img src="https://res.cloudinary.com/teecodes/image/upload/v1588958916/egusi_htaskz.png"
+                    alt="head meal">
+                <h3>Local</h3>
+                <p>Delicious Nigerian local<br> delicacies to <br> satisfy your cravings<br></p>
+            </div>
+        </div>
+        <div class="menu-content-large" id="menu-large">
+            <h2>Grills and Sandwich</h2>
+            <div class="menu-content">
+                <div class="content" data-aos="fade-up-right" data-aos-duration="2000">
                     <img src="https://res.cloudinary.com/teecodes/image/upload/v1588958944/wings_wadajm.png"
                         alt="beef-stake">
                     <div>
                         <h3>Chicken Special</h3>
                         <p>#1,100</p>
                     </div>
-                </div> -->
+                </div>
                 <div class="content" data-aos="fade-up-right" data-aos-duration="2000">
                     <img src="https://res.cloudinary.com/teecodes/image/upload/v1588958943/shawarma_txtti5.png"
                         alt="shawarma">
@@ -86,7 +91,7 @@ layout: default-layout.njk
                         <p>#1,100</p>
                     </div>
                 </div>
-                <div class="content" data-aos="fade-up-left" data-aos-duration="2000">
+                <div class="content" data-aos="fade-up-right" data-aos-duration="2000">
                     <img src="https://res.cloudinary.com/teecodes/image/upload/v1588958916/burger_ha5aiz.png"
                         alt="Burger">
                     <div>
@@ -94,7 +99,7 @@ layout: default-layout.njk
                         <p>#1,100</p>
                     </div>
                 </div>
-                <div class="content" data-aos="fade-up-left" data-aos-duration="2000">
+                <div class="content" data-aos="fade-up-right" data-aos-duration="2000">
                     <img src="https://res.cloudinary.com/teecodes/image/upload/v1588958918/fries_cx4b5c.png"
                         alt="Fries">
                     <div>
@@ -111,69 +116,69 @@ layout: default-layout.njk
                     </div>
                 </div>
             </div>
-         </div>
-          <div class="menu-content-large whitebg">
-              <h2>Locals</h2>
-              <div class="menu-content">
-                  <div class="content" data-aos="fade-up-right" data-aos-duration="2000">
-                      <img src="https://res.cloudinary.com/teecodes/image/upload/v1588958916/egusi_htaskz.png"
-                          alt="Egusi">
-                      <div>
-                          <h3>Nutrient packed egusi soup</h3>
-                          <p class="backtxt">#1,100</p>
-                      </div>
-                  </div>
-                  <div class="content" data-aos="fade-up-left" data-aos-duration="2000">
-                      <img src="https://res.cloudinary.com/teecodes/image/upload/v1588958937/poundedyam_fgmsi5.png"
-                          alt="pounded-yam">
-                      <div>
-                          <h3>Pounded Yam</h3>
-                          <p class="backtxt">#1,100</p>
-                      </div>
-                  </div>
-                  <!-- <div class="content" data-aos="fade-up-right" data-aos-duration="2000">
-                      <img src="../assets/images/beans.png"
-                          alt="beans">
-                      <div>
-                          <h3>Beans Porridge</h3>
-                          <p class="backtxt">#1,100</p>
-                      </div>
-                  </div> -->
-              </div>
-          </div>
-           <div class="menu-content-large">
-               <h2>Rice</h2>
-               <div class="menu-content">
-                   <div class="content" data-aos="fade-up-right" data-aos-duration="2000">
-                       <img src="https://res.cloudinary.com/teecodes/image/upload/v1588958924/jollof-rice_g1gx9q.png"
-                           alt="beef-stake">
-                       <div>
-                           <h3>Jollof rice classic</h3>
-                           <p>#1,100</p>
-                       </div>
-                   </div>
-                   <div class="content" data-aos="fade-up-left" data-aos-duration="2000">
-                       <img src="https://res.cloudinary.com/teecodes/image/upload/v1588958936/ofada_hfnipx.png"
-                           alt="pizza">
-                       <div>
-                           <h3>Super Ofada Rice</h3>
-                           <p>#1,100</p>
-                       </div>
-                   </div>
-                   <div class="content" data-aos="fade-up-right" data-aos-duration="2000">
-                       <img src="https://res.cloudinary.com/teecodes/image/upload/v1588958925/friedrice_e4ma03.png"
-                           alt="pizza">
-                       <div>
-                           <h3>Fried rice</h3>
-                           <p>#1,100</p>
-                       </div>
-                   </div>
-               </div>
-           </div>
+        </div>
+        <div class="menu-content-large whitebg">
+            <h2>Locals</h2>
+            <div class="menu-content">
+                <div class="content" data-aos="fade-up-right" data-aos-duration="2000">
+                    <img src="https://res.cloudinary.com/teecodes/image/upload/v1588958916/egusi_htaskz.png"
+                        alt="Egusi">
+                    <div>
+                        <h3>Nutrient packed egusi soup</h3>
+                        <p class="backtxt">#1,100</p>
+                    </div>
+                </div>
+                <div class="content" data-aos="fade-up-right" data-aos-duration="2000">
+                    <img src="https://res.cloudinary.com/teecodes/image/upload/v1588958937/poundedyam_fgmsi5.png"
+                        alt="pounded-yam">
+                    <div>
+                        <h3>Pounded Yam</h3>
+                        <p class="backtxt">#1,100</p>
+                    </div>
+                </div>
+                <div class="content" data-aos="fade-up-right" data-aos-duration="2000">
+                    <img src="../assets/images/beans.png" alt="beans">
+                    <div>
+                        <h3>Beans Porridge</h3>
+                        <p class="backtxt">#1,100</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-content-large">
+            <h2>Rice</h2>
+            <div class="menu-content">
+                <div class="content" data-aos="fade-up-right" data-aos-duration="2000">
+                    <img src="https://res.cloudinary.com/teecodes/image/upload/v1588958924/jollof-rice_g1gx9q.png"
+                        alt="beef-stake">
+                    <div>
+                        <h3>Jollof rice classic</h3>
+                        <p>#1,100</p>
+                    </div>
+                </div>
+                <div class="content" data-aos="fade-up-right" data-aos-duration="2000">
+                    <img src="https://res.cloudinary.com/teecodes/image/upload/v1588958936/ofada_hfnipx.png"
+                        alt="pizza">
+                    <div>
+                        <h3>Super Ofada Rice</h3>
+                        <p>#1,100</p>
+                    </div>
+                </div>
+                <div class="content" data-aos="fade-up-right" data-aos-duration="2000">
+                    <img src="https://res.cloudinary.com/teecodes/image/upload/v1588958925/friedrice_e4ma03.png"
+                        alt="pizza">
+                    <div>
+                        <h3>Fried rice</h3>
+                        <p>#1,100</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="/assets/script.js"></script>
+    <script src="/assets/script.js"></script>
 </body>
 <script src="/assets/script.js"></script>
+
 </html>

@@ -30,11 +30,12 @@ layout: default-layout.njk
     </div>
     <nav>
         <div class="nav-menu">
-            <li class="show"><a href="./menu">View menu</a></li>
+         <ul>
+            <li class="show"><a href="./menu">View<br> menu</a></li>
             <li class="hide"><a href="./menu">Our menu</a></li>
             <li class="hide"><a href="#location">Locate us</a></li>
-            <a href="/"><img class="logo"
-                    src="https://res.cloudinary.com/teecodes/image/upload/v1588958941/RIVAL_MEALS_APPROVED-01_urmn5g.png"></a>
+            <a href="/" name="logo"><img class="logo"
+                    src="https://res.cloudinary.com/teecodes/image/upload/v1588958941/RIVAL_MEALS_APPROVED-01_urmn5g.png" alt="logo"></a>
             <li class="hide"><a href="#blog">Our Blog</a></li>
             <li class="hide"><a href="#bookings">Book us</a></li>
             <li class="show hamburger">
@@ -42,7 +43,7 @@ layout: default-layout.njk
                 <div class="ham ham2"></div>
                 <div class="ham ham3"></div>
             </li>
-
+          </ul>
     </nav>
     <section class="hero">
         <div class="hero-content-desktop">
@@ -101,7 +102,7 @@ layout: default-layout.njk
                     alt="Form image">
             </div>
             <div class="formsec-cont-right">
-                <div class="form-text" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="300">
+                <div class="form-text" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="300">
                     <h2>What ever the occasion is let's make it sweeter</h2>
                     <p>Be it a wedding, birthday, business meeting, or even a watch party. We'll be sure to
                         serve.
@@ -111,10 +112,10 @@ layout: default-layout.njk
                 </div>
 
                 <div class="form-field" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
-                    <input type="text" placeholder="Your name">
-                    <input type="text" placeholder="Your email">
-                    <input type="text" placeholder="Event type">
-                    <textarea name="Message" placeholder="A little brief about your event"></textarea>
+                    <input type="text" placeholder="Your name" label="name">
+                    <input type="text" placeholder="Your email" label="email">
+                    <input type="text" placeholder="Event type" label="event">
+                    <textarea name="Message" placeholder="A little brief about your event" label="message"></textarea>
                     <a href="#">Send message</a>
 
                 </div>

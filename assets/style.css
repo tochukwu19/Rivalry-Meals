@@ -89,21 +89,26 @@ nav {
     font-size: 18px;
 }
 
-.nav-menu>li>a {
+.nav-menu ul{
+    margin: 0;
+    display: contents;
+}
+
+.nav-menu>ul>li>a {
     text-decoration: none;
     color: #000;
     padding: 10px;
 }
 
 
-.nav-menu>li {
+.nav-menu>ul>li {
     list-style-type: none;
     padding: 15px;
 }
 
 
 
-.nav-menu>li:hover {
+.nav-menu>ul>li:hover {
     border-bottom: 1px solid #000;
 }
 
@@ -176,9 +181,9 @@ nav {
 }
 
 .hero h1 {
-    font-size: 36px;
+    font-size: 38px;
     font-weight: lighter;
-    color: #DCBE80;
+    color: hsl(69, 19%, 31%);
     font-family: 'Parisienne', cursive;
 }
 
