@@ -185,9 +185,9 @@ nav {
 
 .hero h1 {
     font-size: 38px;
-    font-weight: lighter;
+    font-weight: 500;
     color: hsl(69, 19%, 31%);
-    font-family: 'Parisienne', cursive;
+    font-family: var(--font-family2);
 }
 
 .hero p {
