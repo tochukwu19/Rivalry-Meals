@@ -463,6 +463,8 @@ footer {
 
 .locate-image img {
     width: 330px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .locate-text {
